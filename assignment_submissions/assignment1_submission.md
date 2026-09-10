@@ -32,13 +32,13 @@ Rolling is limit cycle and dead stop is fixed point.
 ## Visualization and discussion of slope and spokes affects the RoA and local convergence
 Below are six plots. The first two shows the overlayed return maps from all values in the two respective sweeps. The third and fourth shows how the Floquet Multiplier changes as a function of number of spokes and inclination, respectively. The fifth and sixth shows how the fixed velocity changes as a function of number of spokes and inclination, respectively.
 
-![Return Map Spoke Sweep (fig 1)](assets/return_map_spokes)
-![Return Map Inclination Sweep (fig 2)](assets/return_map_slopes)
-![Floquet Multiplier Spoke Sweep (fig 3)](assets/floquet_spokes)
+![Return Map Spoke Sweep (fig 1)](../assets/return_map_spokes.png)
+![Return Map Inclination Sweep (fig 2)](../assets/return_map_slopes)
+![Floquet Multiplier Spoke Sweep (fig 3)](../assets/floquet_spokes)
 Observations: Clear positive correlation with diminishing growth.
-![Floquet Multiplier Inclination Sweep (fig 4)](assets/floquet_slopes)
+![Floquet Multiplier Inclination Sweep (fig 4)](../assets/floquet_slopes)
 Observations: Floquet multiplier stays roughly constant as the inclination angle is changed.
-![Fixed Velocity Spoke Sweep (fig 5)](assets/fixed_velocity_spokes)
+![Fixed Velocity Spoke Sweep (fig 5)](../assets/fixed_velocity_spokes)
 Observations: Positive correlation. Looks pretty linear but there are definitely a few bumps.
-![Fixed Velocity Inclination Sweep (fig 6)](assets/fixed_velocity_slopes)
+![Fixed Velocity Inclination Sweep (fig 6)](../assets/fixed_velocity_slopes)
 Observations: Clear positive correlation with diminishing growth. Looks an awfully lot like the graph of y = $\sqrt{10x}$.
