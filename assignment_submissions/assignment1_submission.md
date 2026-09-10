@@ -33,12 +33,17 @@ Rolling is limit cycle and dead stop is fixed point.
 Below are six plots. The first two shows the overlayed return maps from all values in the two respective sweeps. The third and fourth shows how the Floquet Multiplier changes as a function of number of spokes and inclination, respectively. The fifth and sixth shows how the fixed velocity changes as a function of number of spokes and inclination, respectively.
 
 ![Return Map Spoke Sweep (fig 1)](../assets/return_map_spokes.png)
+The return map shows that more spokes leads to larger slopes at the intersection point (see floquet multiplier section below). Furthermore, as the spoke amount increases, the intersection points moves to the right. Thus the steady state impact velocity increases with spoke count (collision angle is shallower with mroe spokes which leads to less kinetic energy dissapated during each impact). The return map also tells us a lot about how number of spokes affects the region of attraction. The dark blue line representing 6 spokes extends further to the right and less to the left than yellow line representing 16 spokes. Thus fewer spokes can tolerate higher speeds but needs a higher minimum initial velocity.
 ![Return Map Inclination Sweep (fig 2)](../assets/return_map_slopes.png)
+Theres a clear positive shift upward and to the right of the return map as the slope increases. This doesn't change the size of the stability regions in the region of attraction, but just also shifts it. A wheel on a steeper slope would stall out at an impact velocity that would be stable on a less steep slope.
 ![Floquet Multiplier Spoke Sweep (fig 3)](../assets/floquet_spokes.png)
-Observations: Clear positive correlation with diminishing growth.
+Adding more spokes to the wheel greatly increases the Floquet multiplier. With 16 spokes, the multiplier is around 0.85 while at 6 spokes its around 0.25. The Floquet multiplier is a measure of system stability, with perturbations decaying fastest in systems with Floquet multipliers closer to zero, and slower (or not at all) in system with Floquet multipliers closer to one (or greater than one). Therefore a wheel with fewer spokes can recover from any kinetic perturbations much faster.
+
 ![Floquet Multiplier Inclination Sweep (fig 4)](../assets/floquet_slopes.png)
-Observations: Floquet multiplier stays roughly constant as the inclination angle is changed.
+Slope does not seem to have much of an effect on the Floquet multiplier. The local convergence and error recovery is unaffected by any increase in potential energy. I would've thought that the higher speeds as the slope gets steeper would impact the stability of the system more, but maybe since the collision geometry is unaffected it doesn't matter?
 ![Fixed Velocity Spoke Sweep (fig 5)](../assets/fixed_velocity_spokes.png)
-Observations: Positive correlation. Looks pretty linear but there are definitely a few bumps.
+Spoke amount is nearly linearly porportional to the fixed velocity at impact. As the number of spokes increase. As mentioned above, more spokes leads to higher steady-state rolling velocities.
 ![Fixed Velocity Inclination Sweep (fig 6)](../assets/fixed_velocity_slopes.png)
-Observations: Clear positive correlation with diminishing growth. Looks an awfully lot like the graph of y = $\sqrt{10x}$.
+The fixed velocity increases concavely with the slope. This makes sense given that potential energy is gained from the steeper slope, but at hgiher velocities, more kinetic energy will be lost at each impact. Delicate balance that shifts with inclination angle.
+
+
